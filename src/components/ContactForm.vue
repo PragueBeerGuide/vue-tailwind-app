@@ -1,6 +1,6 @@
 <template>
   <form
-    class="flex flex-col p-6 mt-4 sm:mt-8 text-sm leading-6 text-red-600 bg-white rounded-xl max-w-3xl"
+    class="flex flex-col p-6 my-4 md:my-8 text-sm leading-6 text-red-600 bg-white rounded-xl max-w-3xl"
   >
     <h3 class="text-xl font-semibold leading-7 text-neutral-900 max-md:max-w-full">
       Kontaktní údaje
@@ -228,7 +228,7 @@
     </div>
 
     <button
-      class="w-max justify-center px-6 py-3 text-base font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-lg"
+      class="lg:w-max justify-center px-6 py-3 text-base font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-lg"
     >
       Uložit změny
     </button>

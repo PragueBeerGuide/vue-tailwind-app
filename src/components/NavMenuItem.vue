@@ -1,5 +1,7 @@
 <script setup>
 import ArrowRightIcon from './icons/ArrowRightIcon.vue'
+import { HomeIcon, UserIcon } from '@heroicons/vue/24/outline'
+import IconComponent from './IconComponent.vue'
 </script>
 
 <template>
@@ -9,9 +11,9 @@ import ArrowRightIcon from './icons/ArrowRightIcon.vue'
       class="flex p-3 sm:py-4 sm:px-[15px] group bg-gray-100 hover:text-white hover:bg-blue-500 rounded"
     >
       <div class="flex justify-between items-center w-full">
-        <div class="flex">
-          <img :src="imgPath" alt="alt text" height="16" width="16" class="mr-3 sm:mr-1.5" />
-          <span class="hidden sm:block">{{ name }}</span>
+        <div class="flex items-center">
+          <IconComponent :icon="HomeIcon" class="group-hover:text-white mr-2" />
+          <span class="text-sm sm:text-base">{{ name }}</span>
         </div>
 
         <ArrowRightIcon
@@ -29,8 +31,14 @@ export default {
       type: String,
       required: true
     },
-    imgPath: {
-      type: String
+    components: {
+      IconComponent
+    },
+    data() {
+      return {
+        HomeIcon,
+        UserIcon
+      }
     }
   }
 }

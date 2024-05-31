@@ -4,28 +4,28 @@ import NavMenuItem from './NavMenuItem.vue'
 </script>
 
 <template>
-  <div class="sm:sticky sm:top-[104px]">
+  <div class="md:sticky md:top-[104px]">
     <div
-      class="w-full sm:w-[304px] sticky top-0 flex flex-col bg-white rounded-lg p-2 sm:px-6 pt-3 sm:pt-8 sm:pb-5"
+      class="w-full md:w-[304px] sticky top-0 flex flex-col bg-white rounded-lg p-2 md:px-6 pt-3 md:pt-8 md:pb-5"
     >
-      <h2 class="hidden sm:block text-xl text-center font-semibold mb-1">Daniil Filatov</h2>
-      <p class="hidden sm:block font-light text-center text-neutral-500 mb-6">
+      <h2 class="hidden md:block text-xl text-center font-semibold mb-1">Daniil Filatov</h2>
+      <p class="hidden md:block font-light text-center text-neutral-500 mb-6">
         daniil.filatov@newlogic.cz
       </p>
       <nav>
-        <ul class="flex flex-wrap sm:flex-col gap-2">
-          <NavMenuItem name="Moje objednávky" imgPath="src/assets/documentIcon.svg" />
-          <NavMenuItem name="Faktury" imgPath="src/assets/documentCheckIcon.svg" />
-          <NavMenuItem name="Seznam přání" imgPath="src/assets/heartIcon.svg" />
-          <NavMenuItem name="Slevové kódy" imgPath="src/assets/heartIcon.svg" />
-          <NavMenuItem name="Věrnostní program" imgPath="src/assets/heartIcon.svg" />
-          <NavMenuItem name="Nastavení účtu" imgPath="src/assets/cog6toothIcon.svg" />
+        <ul class="grid grid-cols-2 md:flex md:flex-col gap-2">
+          <NavMenuItem name="Moje objednávky" iconName="HeartIcon" />
+          <NavMenuItem name="Faktury" iconName="HeartIcon" />
+          <NavMenuItem name="Seznam přání" iconName="HeartIcon" />
+          <NavMenuItem name="Slevové kódy" iconName="HeartIcon" />
+          <NavMenuItem name="Věrnostní program" iconName="HeartIcon" />
+          <NavMenuItem name="Nastavení účtu" iconName="HeartIcon" />
         </ul>
       </nav>
-      <div class="flex mb-2 sm:mb-auto items-center justify-between order-first sm:order-last">
-        <div class="sm:hidden w-10 text-center font-bold p-2 rounded-full bg-gray-200">DF</div>
-        <p class="sm:hidden font-light text-neutral-500">daniil.filatov@newlogic.cz</p>
-        <button class="flex sm:mt-8 items-center">
+      <div class="flex mb-2 md:mb-auto items-center justify-between order-first md:order-last">
+        <div class="md:hidden w-10 text-center font-bold p-2 rounded-full bg-gray-200">DF</div>
+        <p class="md:hidden font-light text-neutral-500">daniil.filatov@newlogic.cz</p>
+        <button class="flex md:mt-8 items-center">
           <svg
             width="20"
             height="20"
@@ -46,7 +46,7 @@ import NavMenuItem from './NavMenuItem.vue'
               fill="#171717"
             />
           </svg>
-          <div class="ml-2">Odhlásit se</div>
+          <div class="hidden md:block ml-2">Odhlásit se</div>
         </button>
       </div>
     </div>

@@ -6,12 +6,12 @@ import { store } from './store/store'
 </script>
 
 <template>
-  <div class="px-4 sm:px-8 md:px-16">
-    <h1 class="sm:sticky sm:top-0 text-2xl sm:text-4xl font-semibold py-4 sm:py-8">
+  <div class="px-4 md:px-8">
+    <h1 class="md:sticky md:top-0 text-2xl md:text-4xl font-semibold py-4 md:py-8">
       {{ store.activeMenuTab }}
     </h1>
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-8">
-      <NavMenu :items="menuItems" />
+    <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+      <NavMenu />
       <div class="w-full max-w-3xl">
         <Orders />
         <ContactForm />
