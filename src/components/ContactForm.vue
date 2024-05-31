@@ -19,7 +19,7 @@
         <label
           for="first_name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Jméno</label
+          >Jméno<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -34,7 +34,7 @@
         <label
           for="last_name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Příjmení</label
+          >Příjmení<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -49,7 +49,7 @@
         <label
           for="email"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Email</label
+          >Email<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -64,7 +64,7 @@
         <label
           for="phone-number"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Telefon</label
+          >Telefon<span class="text-red-500">*</span></label
         >
       </div>
     </div>
@@ -86,7 +86,7 @@
         <label
           for="company-name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Název firmy</label
+          >Název firmy<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -101,7 +101,7 @@
         <label
           for="street-name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Ulice</label
+          >Ulice<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -116,7 +116,7 @@
         <label
           for="city-name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Město</label
+          >Město<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -131,7 +131,7 @@
         <label
           for="zip-code"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >PSČ</label
+          >PSČ<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -146,7 +146,7 @@
         <label
           for="company-id"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >IČ</label
+          >IČ<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -161,7 +161,7 @@
         <label
           for="tax-id"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >DIČ</label
+          >DIČ<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -176,7 +176,7 @@
         <label
           for="cpy-first_name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Jméno</label
+          >Jméno<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -191,7 +191,7 @@
         <label
           for="cpy-last_name"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Příjmení</label
+          >Příjmení<span class="text-red-500">*</span></label
         >
       </div>
 
@@ -207,7 +207,7 @@
         <label
           for="cpy-phone-number"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Telefon</label
+          >Telefon<span class="text-red-500">*</span></label
         >
       </div>
       <div class="relative z-0 w-full group">
@@ -222,7 +222,7 @@
         <label
           for="cpy-email"
           class="peer-focus:font-medium absolute text-sm text-neutral-500 duration-300 transform -translate-y-6 scale-75 top-3 left-3 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >Email</label
+          >Email<span class="text-red-500">*</span></label
         >
       </div>
     </div>
