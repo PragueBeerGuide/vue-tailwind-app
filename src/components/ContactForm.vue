@@ -1,6 +1,6 @@
 <template>
   <form
-    class="flex flex-col p-6 my-4 md:my-8 text-sm leading-6 text-red-600 bg-white rounded-xl max-w-3xl"
+    class="flex flex-col p-6 my-4 md:mb-8 md:mt-0 text-sm leading-6 text-red-600 bg-white rounded-xl max-w-3xl"
   >
     <h3 class="text-xl font-semibold leading-7 text-neutral-900 max-md:max-w-full">
       Kontaktní údaje

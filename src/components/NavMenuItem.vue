@@ -6,8 +6,8 @@ import IconComponent from './IconComponent.vue'
 
 <template>
   <li class="grow">
-    <a
-      href="#"
+    <RouterLink
+      :to="view"
       class="flex p-3 sm:py-4 sm:px-[15px] group bg-gray-100 hover:text-white hover:bg-blue-500 rounded"
     >
       <div class="flex justify-between items-center w-full">
@@ -20,7 +20,7 @@ import IconComponent from './IconComponent.vue'
           class="group-hover:text-white transition-transform duration-150 group-hover:translate-x-1 group-hover:scale-125"
         />
       </div>
-    </a>
+    </RouterLink>
   </li>
 </template>
 
@@ -28,6 +28,10 @@ import IconComponent from './IconComponent.vue'
 export default {
   props: {
     name: {
+      type: String,
+      required: true
+    },
+    view: {
       type: String,
       required: true
     },

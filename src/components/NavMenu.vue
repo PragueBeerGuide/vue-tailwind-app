@@ -14,12 +14,12 @@ import NavMenuItem from './NavMenuItem.vue'
       </p>
       <nav>
         <ul class="grid grid-cols-2 md:flex md:flex-col gap-2">
-          <NavMenuItem name="Moje objednávky" iconName="HeartIcon" />
-          <NavMenuItem name="Faktury" iconName="HeartIcon" />
-          <NavMenuItem name="Seznam přání" iconName="HeartIcon" />
-          <NavMenuItem name="Slevové kódy" iconName="HeartIcon" />
-          <NavMenuItem name="Věrnostní program" iconName="HeartIcon" />
-          <NavMenuItem name="Nastavení účtu" iconName="HeartIcon" />
+          <NavMenuItem name="Moje objednávky" view="orders" />
+          <NavMenuItem name="Faktury" view="invoices" />
+          <NavMenuItem name="Seznam přání" view="orders" />
+          <NavMenuItem name="Slevové kódy" view="invoices" />
+          <NavMenuItem name="Věrnostní program" view="settings" />
+          <NavMenuItem name="Nastavení účtu" view="settings" />
         </ul>
       </nav>
       <div class="flex mb-2 md:mb-auto items-center justify-between order-first md:order-last">
@@ -52,3 +52,11 @@ import NavMenuItem from './NavMenuItem.vue'
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  components: {
+    NavMenuItem
+  }
+}
+</script>

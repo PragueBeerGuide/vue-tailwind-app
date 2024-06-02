@@ -1,8 +1,5 @@
 <script setup>
 import NavMenu from './components/NavMenu.vue'
-import Orders from './components/Orders.vue'
-import Table from './components/Table.vue'
-import ContactForm from './components/ContactForm.vue'
 import { store } from './store/store'
 </script>
 
@@ -13,11 +10,17 @@ import { store } from './store/store'
     </h1>
     <div class="flex flex-col md:flex-row gap-4 md:gap-8">
       <NavMenu />
-      <div class="w-full max-w-3xl">
-        <Orders />
-        <Table />
-        <ContactForm />
-      </div>
+
+      <router-view class="w-full max-w-3xl" />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  components: {
+    NavMenu
+  }
+}
+</script>
