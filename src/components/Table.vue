@@ -15,14 +15,6 @@ import TableRow from './TableRow.vue'
       </thead>
       <tbody>
         <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
-        <TableRow />
       </tbody>
     </table>
   </div>

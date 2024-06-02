@@ -3,10 +3,10 @@ import DownloadIcon from './icons/DownloadIcon.vue'
 </script>
 
 <template>
-  <tr class="text-neutral-500">
-    <td class="px-6 pt-6 pb-3.5">121548784515487</td>
-    <td class="px-6 pt-6 pb-3.5">121548784515487</td>
-    <td class="px-6 pt-6 pb-3.5 text-center">-1500 Kč</td>
+  <tr class="text-neutral-500" v-for="item in invoices" :key="item.id">
+    <td class="px-6 pt-6 pb-3.5">{{ item.invoiceID }}</td>
+    <td class="px-6 pt-6 pb-3.5">{{ item.orderID }}</td>
+    <td class="px-6 pt-6 pb-3.5 text-center">{{ item.totalPrice }} Kč</td>
     <td class="px-6 pt-6 pb-3.5">
       <a
         href="#"
@@ -19,3 +19,23 @@ import DownloadIcon from './icons/DownloadIcon.vue'
     </td>
   </tr>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      invoices: [
+        { id: 1, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 2, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 3, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 4, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 5, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 6, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 7, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 8, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 },
+        { id: 9, invoiceID: 121548784515487, orderID: 121548784515487, totalPrice: -1500 }
+      ]
+    }
+  }
+}
+</script>

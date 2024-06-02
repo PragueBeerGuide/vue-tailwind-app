@@ -14,9 +14,9 @@ import { store } from './store/store'
     <div class="flex flex-col md:flex-row gap-4 md:gap-8">
       <NavMenu />
       <div class="w-full max-w-3xl">
-        <!-- <Orders /> -->
+        <Orders />
         <Table />
-        <!-- <ContactForm /> -->
+        <ContactForm />
       </div>
     </div>
   </div>
